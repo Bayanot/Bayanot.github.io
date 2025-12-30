@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bayan Otun Yıl Özeti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      .kose-resim {
+        position: fixed;
+        bottom:  10px;
+        right:   10px;
+        width:   10px;
+      
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0b1220, #020617);
+      color: white;
+      overflow-x: hidden;
+      <img src="bhirtdaycat.png"
+      class="kose-resim" alt="kose-resmi"
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      position: relative;
+    }
+
+  .slide {
+  max-width: 90%;
+  opacity: 0;
+  transform: translateY(60px) scale(0.97);
+  transition: all 1s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px; /* yazılar arası boşluk */
+}
+
+
+    .slide.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 14px;
+      text-shadow: 0 0 30px rgba(255,255,255,0.35);
+    }
+
+    h2, h3 {
+      font-size: 1.9rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+    }
+
+    .small {
+      font-size: 0.9rem;
+      opacity: 0.6;
+      margin-top: 12px;
+    }
+
+    .btn {
+      margin-top: 36px;
+      padding: 14px 42px;
+      border-radius: 50px;
+      border: none;
+      background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+      color: #020617;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 35px rgba(255,255,255,0.8);
+    }
+
+    .glow {
+      animation: glow 3s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px rgba(255,255,255,0.25);
+      }
+      to {
+        text-shadow: 0 0 40px rgba(255,255,255,0.9);
+      }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 12px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.75rem;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 1 -->
+  <section>
+    <div class="slide active">
+      <h1 class="glow">2025 Yıl Özetin ✨</h1>
+      <p>Bu yılın kısa ama dürüst bir özeti…</p>
+      <button class="btn" onclick="nextSlide()">Başlayalım</button>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section>
+    <div class="slide">
+      <h1>Bu yıl beni</h1>
+      <h2 class="glow">biraz fazla zorladın.</h2>
+      <p class="small">Ama alıştım sanırım.</p>
+      <button class="btn" onclick="nextSlide()">Devam</button>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section>
+    <div class="slide">
+      <h1>Bu yıl en çok söylediğin kelime</h1>
+      <h2 class="glow">“Boşver”</h2>
+      <p class="small">Sağır olduğumdan duyamıyorum seni.</p>
+      <button class="btn" onclick="nextSlide()">Devam</button>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section>
+    <div class="slide">
+      <h1>Bu yıl en çok çizdiğin figür</h1>
+      <h3 class="glow">"Sinek Figürleri "</h3>
+      <p class="small">En azından kalemliğimde güzel duruyor.</p>
+      <button class="btn" onclick="nextSlide()">Devam</button>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section>
+    <div class="slide">
+      <h1>En çok yaptığın şey</h1>
+      <h2 class="glow">"Sınavlardan düşük not almak."</h2>
+      <p class="small">"Çok da önemli değil aslında."</p>
+      <button class="btn" onclick="nextSlide()">Devam</button>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section>
+    <div class="slide">
+      <h1>Benim en çok yaptığım şey</h1>
+      <h3 class="glow">"Seni sinir etmek"</h3>
+      <p class="small">"Pişman mıyım? Sanmıyorum."</p>
+      <button class="btn" onclick="nextSlide()">Devam</button>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section>
+    <div class="slide">
+      <h1>Bu yıl öğrendiğim bir şey varsa</h1>
+      <h3 class="glow">Bütün hatalara rağmen</h3>
+      <p>"Buna değer."</p>
+      <button class="btn" onclick="nextSlide()">Devam</button>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section>
+    <div class="slide">
+      <h1>Ve son olarak</h1>
+      <h3 class="glow">İyi ki varsın🤍</h3>
+      <p class="small">"Bu yılın net sonucu."</p>
+    </div>
+  </section>
+
+  <footer>
+    Mutlu Yıllar! 
+  </footer>
+
+  <script>
+const sections = document.querySelectorAll('section');
+let currentIndex = 0;
+
+function nextSlide() {
+  if (currentIndex < sections.length - 1) {
+    currentIndex++;
+    sections[currentIndex].scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+}
+
+// Scroll olunca aktif animasyonu düzgün yakala
+window.addEventListener('scroll', () => {
+  sections.forEach((section, index) => {
+    const slide = section.querySelector('.slide');
+    const rect = section.getBoundingClientRect();
+
+    if (rect.top < window.innerHeight * 0.6) {
+      slide.classList.add('active');
+      currentIndex = index;
+    }
+  });
+});
+
+
+    window.addEventListener('scroll', () => {
+      slides.forEach(slide => {
+        const rect = slide.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.65) {
+          slide.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
